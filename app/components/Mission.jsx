@@ -14,7 +14,7 @@ const Mission = () => {
                     viewport={{ once: false, amount: 0.3 }} // Ensures animation happens every time it's in view
                 >
                     <img
-                        src="/in.jpg"
+                        src="/kwa.jpg"
                         alt="Vision and Mission"
                         className="rounded-2xl shadow-lg w-full object-cover"
                     />
@@ -27,13 +27,11 @@ const Mission = () => {
                     transition={{ duration: 1, delay: 0.3 }}
                     viewport={{ once: false, amount: 0.3 }}
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold text-green-600 mb-4">
-                        <span className="text-black">The </span>Mission
+                    <h2 className="text-3xl sm:text-4xl font-bold text-red-600 mb-4">
+                        <span className="text-black">OUR </span>MISSION AT LAIKAN MEDIA
                     </h2>
                     <p className="text-lg text-gray-700 mb-6">
-                        Our vision is to create a Nigeria where the youth are at the forefront of leadership,
-                        innovation, and national development. We strive for a society where every young person
-                        has the opportunity to contribute meaningfully to governance and social progress.
+                        We envision a Nigeria where young voices shape the narrative—where the youth are not just part of the conversation, but leading it. Through powerful storytelling, creative media, and strategic communication, we aim to spotlight a generation driving innovation, leadership, and transformative change.
                     </p>
 
                     {/* Animated List */}
@@ -48,10 +46,10 @@ const Mission = () => {
                         }}
                     >
                         {[
-                            "Empowering youth through political participation and leadership training.",
-                            "Advocating for policies that create job opportunities for young people.",
-                            "Building a network of young leaders committed to positive change.",
-                            "Promoting inclusive governance and accountability."
+                            "Inspiring youth to lead through digital storytelling and impactful media campaigns.",
+                            "Advocating for tech-driven solutions that unlock jobs and creative opportunities.",
+                            "Connecting young changemakers through media-driven movements and collaborative platforms.",
+                            "Championing transparency and inclusive leadership through powerful visual narratives."
                         ].map((item, index) => (
                             <motion.li
                                 key={index}
@@ -65,6 +63,7 @@ const Mission = () => {
                             </motion.li>
                         ))}
                     </motion.ul>
+
                 </motion.div>
             </div>
         </section>

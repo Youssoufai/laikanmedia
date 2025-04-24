@@ -7,17 +7,17 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow-md fixed w-full top-0 z-50 px-8 md:px-12 py-3 lg:px-20">
+        <nav className="bg-black shadow-md fixed w-full top-0 z-50 px-8 md:px-12 py-3 lg:px-20">
             <div className="flex items-center justify-between py-4">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <img src="/coa.webp" alt="Logo" className="h-10" />
-                    <span className="text-green-800 font-bold text-lg">ABBA KABADE</span>
+                    <img src="/logo-two.png" alt="Logo" className="h-10" />
+                    <span className="text-red-800 font-bold text-lg">LAIKAN MEDIA</span>
                 </div>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-6 text-gray-600 font-medium">
-                    <motion.li whileHover={{ scale: 1.1 }} className="text-green-700 cursor-pointer">Home</motion.li>
+                    <motion.li whileHover={{ scale: 1.1 }} className="text-red-700 cursor-pointer">Home</motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer">About</motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer">Gallery</motion.li>
                     <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer">News & Updates</motion.li>

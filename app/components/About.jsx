@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-    "/first.jpg",
-    "/second.jpg",
-    "/third.jpg",
+    "/capture.jpg",
+    "/abdool.jpg",
+    "/boys.jpg",
 ];
 
 export default function About() {
@@ -24,26 +24,31 @@ export default function About() {
     }, []);
 
     return (
-        <section className="p-11 bg-gray-100 overflow-hidden">
+        <section className="p-11 bg-gray-100 overflow-hidden pt-24">
+            {/* Title */}
             <div className="text-center mb-6">
                 <h1 className="text-4xl font-bold text-black">
-                    About <span className="text-green-600">Muhammad Kabade</span>
+                    About <span className="text-red-600">LAIKAN MEDIA</span>
                 </h1>
             </div>
 
             {/* Slideshow Section */}
-            <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg">
-                <AnimatePresence>
-                    <motion.img
+            <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg h-[400px]">
+                <AnimatePresence mode="wait">
+                    <motion.div
                         key={currentIndex}
-                        src={images[currentIndex]}
-                        alt={`Slide ${currentIndex + 1}`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="w-full h-full object-cover"
-                    />
+                        className="absolute top-0 left-0 w-full h-full"
+                    >
+                        <img
+                            src={images[currentIndex]}
+                            alt={`Slide ${currentIndex + 1}`}
+                            className="w-full h-full object-cover"
+                        />
+                    </motion.div>
                 </AnimatePresence>
 
                 {/* Navigation Buttons */}
@@ -73,13 +78,7 @@ export default function About() {
             {/* About Text */}
             <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mt-6">
                 <p className="mb-4">
-                    Muhammad Kabade Suleiman hails from Nasarawan Doya Village, Makarfi LGA, Kaduna State. Born in 1996, he comes from a distinguished lineage as the son of the late Dan-Malikin Zazzau and the grandson of the Emir of Nasarawan Doya. He holds the esteemed traditional title of{" "}
-                    <span className="font-semibold text-black">Santurakin Nasarawan Doya</span>.
-                </p>
-
-                <p>
-                    Passionate about youth empowerment, Muhammad aligned with the{" "}
-                    <span className="font-semibold text-black">People's Democratic Party (PDP)</span> from an early age. At just 25, he made history as the National Youth Leader of the PDP, a milestone that signified a new era of youth involvement in Nigerian politics. His leadership continues to inspire and drive meaningful change for young people nationwide.
+                    We’re a team driven by creativity and innovation. With a mission to empower businesses with top notch commercial videos and Social Media contents. We currently work with clients like WellCare Stores, Calido Rooftop, iTel Nigeria, Zazu Restaurant, Tahir Guest Palace Hotels, Porto Golf Hotels, Bells Nigeria, The GlitzFair, and others.
                 </p>
             </div>
         </section>

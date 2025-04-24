@@ -18,11 +18,11 @@ export default function ReviewForm() {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false, amount: 0.2 }}
             >
-                <img src="/coa.webp" alt="Logo" className="h-16" />
+                <img src="/logo.jpg" alt="Logo" className="h-16" />
             </motion.div>
 
             {/* Header */}
-            <h2 className="text-3xl font-bold text-green-700 text-center">We would love to hear from you!</h2>
+            <h2 className="text-3xl font-bold text-red-700 text-center">We would love to hear from you!</h2>
             <p className="text-gray-600 text-center mt-2">
                 Let us know how we are performing and share your concerns on topical issues.
             </p>
@@ -44,7 +44,7 @@ export default function ReviewForm() {
 
             {/* Submit Button */}
             <motion.button
-                className="mt-4 bg-green-600 text-white px-6 py-3 rounded-lg w-full max-w-md font-semibold hover:bg-green-700"
+                className="mt-4 bg-red-600 text-white px-6 py-3 rounded-lg w-full max-w-md font-semibold hover:bg-green-700"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
